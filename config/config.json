@@ -1,0 +1,16 @@
+{
+  "environments": {
+    "DEV": {
+      "url": "http://www.automationpractice.pl/index.php",
+	  "MAX_RETRY": "3"
+    },
+    "QA": {
+      "url": "http://www.automationpractice.pl/index.php",
+	  "MAX_RETRY": "3"
+    },
+    "STG": {
+      "url": "http://www.automationpractice.pl/index.php",
+	  "MAX_RETRY": "3"
+    }
+  }
+}
