@@ -2,7 +2,7 @@
 
 <suite name="Automation practice Suite" parallel = "methods" thread-count="8" verbose="1">
   <test name="UI Automation">
-  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="browser" value="${browser}"></parameter>
   <parameter name="isLambdaTest" value="${isLambdaTest}"></parameter>
   <parameter name="isHeadless" value="${isHeadless}"></parameter>
   
