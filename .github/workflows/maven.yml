@@ -22,6 +22,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+        
     - name: Running Test Automation Framework with Maven
       run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
 
@@ -32,7 +33,7 @@ jobs:
        name: Test logs
        path: logs/
 
-    - name: Upload Test Reports
+    - name: Upload Screenshots as Artifacts
       if: always()
       uses: actions/upload-artifact@v4.6.2
       with:
@@ -59,7 +60,7 @@ jobs:
         cp -R screenshots/ public/extent-reports/screenshots/
         ls -l
 
-    - name: Deploy to GitHub Pages
+    - name: Deploy 🚀
       if: always()  
       uses: JamesIves/github-pages-deploy-action@v4
       with: 
